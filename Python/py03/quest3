@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMCDkuDv1j7lwSf6v8h9FN5",
+      "authorship_tag": "ABX9TyN4fBEtkuKWFh2i6A/y/RKd",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -37,69 +37,51 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 14,
+      "execution_count": 16,
       "metadata": {
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 557
+          "base_uri": "https://localhost:8080/"
         },
         "id": "xSpJ34wfzrNR",
-        "outputId": "615d9dff-28e2-4e55-9527-15fcd931a012"
+        "outputId": "20e703d2-bc7c-4f27-dd06-17fd32b1b49e"
       },
       "outputs": [
         {
-          "name": "stdout",
           "output_type": "stream",
+          "name": "stdout",
           "text": [
-            "숫자를 입력하세요~10\n",
+            "숫자를 입력하세요~111\n",
             "연산자를 입력하세요./\n",
             "숫자를 입력하세요~0\n",
             "0으로 나눌 수 없습니다.\n",
-            "계속 계산하시겠습니까? (y/n): y\n",
-            "숫자를 입력하세요~10\n",
-            "연산자를 입력하세요.*\n",
-            "숫자를 입력하세요~55\n",
-            "결과: 550\n",
-            "계속 계산하시겠습니까? (y/n): y\n"
-          ]
-        },
-        {
-          "output_type": "error",
-          "ename": "KeyboardInterrupt",
-          "evalue": "Interrupted by user",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipykernel_4776/1252962437.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m   \u001b[0;32mwhile\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m     \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m       \u001b[0m숫자1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"숫자를 입력하세요~\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m       \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+            "계속 계산하시겠습니까? (y/n): n\n",
+            "계산기를 종료합니다.\n"
           ]
         }
       ],
       "source": [
         "import math\n",
         "\n",
-        "while True:\n",
+        "while True: #계산 이후 반복을 위해 while문\n",
         "\n",
         "  while True:\n",
         "    try:\n",
         "      숫자1 = int(input(\"숫자를 입력하세요~\"))\n",
-        "      break\n",
+        "      break #정수가 입력되면 반복 멈춤\n",
         "\n",
-        "    except ValueError:\n",
+        "    except ValueError: #valueError 정수 입력 요청.\n",
         "      print(\"잘못된 입력입니다. 정수를 입력해주세요.\")\n",
         "\n",
-        "  연산자 = ['+','-','*','/','**']\n",
+        "  연산자 = ['+','-','*','/','**'] #연산자 값 지정\n",
         "\n",
         "  while True:\n",
         "    입력 = input(\"연산자를 입력하세요.\")\n",
         "\n",
-        "    if 입력 in 연산자:\n",
+        "    if 입력 in 연산자: #목록에 있는 연산자가 나오면 break\n",
         "      break\n",
         "\n",
         "    else:\n",
-        "      print(\"지원하지 않는 연산자 입니다.\")\n",
+        "      print(\"지원하지 않는 연산자 입니다.\") #아닐경우\n",
         "\n",
         "  while True:\n",
         "    try:\n",
@@ -137,7 +119,7 @@
         "\n",
         "  if 다시 != 'y':\n",
         "    print(\"계산기를 종료합니다.\")\n",
-        "    break"
+        "    break #계산종료"
       ]
     },
     {
