@@ -1,0 +1,108 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPraXZXkfPpjd7zE5+fQI4/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/janus5713-ai/AIFFEL_quest_eng/blob/main/AIFFEL_quest_eng/Python/py03/quest3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xSpJ34wfzrNR",
+        "outputId": "787b730a-ca38-496b-fff7-cd5e264ec3fc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "숫자를 입력하세요~ 1\n",
+            "연산자를 입력하세요. -\n",
+            "숫자를 입력하세요~ 1\n",
+            "결과: 0\n",
+            "계속 계산하시겠습니까? (y/n): n\n",
+            "계산기를 종료합니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "\n",
+        "def 정수입력(메시지):\n",
+        "    while True:\n",
+        "        try:\n",
+        "            return int(input(메시지))\n",
+        "        except ValueError:\n",
+        "            print(\"잘못된 입력입니다. 정수를 입력해주세요.\")\n",
+        "\n",
+        "연산자 = ['+', '-', '*', '/', '**']\n",
+        "\n",
+        "while True:\n",
+        "    숫자1 = 정수입력(\"숫자를 입력하세요~ \")\n",
+        "\n",
+        "    while True:\n",
+        "        입력 = input(\"연산자를 입력하세요. \")\n",
+        "        if 입력 in 연산자:\n",
+        "            break\n",
+        "        print(\"지원하지 않는 연산자 입니다.\")\n",
+        "\n",
+        "    숫자2 = 정수입력(\"숫자를 입력하세요~ \")\n",
+        "\n",
+        "    if 입력 == '+':\n",
+        "        결과 = 숫자1 + 숫자2\n",
+        "    elif 입력 == '-':\n",
+        "        결과 = 숫자1 - 숫자2\n",
+        "    elif 입력 == '*':\n",
+        "        결과 = 숫자1 * 숫자2\n",
+        "    elif 입력 == '/':\n",
+        "        if 숫자2 == 0:\n",
+        "            print(\"0으로 나눌 수 없습니다.\")\n",
+        "            continue\n",
+        "        결과 = 숫자1 / 숫자2\n",
+        "    elif 입력 == '**':\n",
+        "        결과 = math.pow(숫자1, 숫자2)\n",
+        "\n",
+        "    print(f\"결과: {결과}\")\n",
+        "\n",
+        "    다시 = input(\"계속 계산하시겠습니까? (y/n): \").lower()\n",
+        "    if 다시 != 'y':\n",
+        "        print(\"계산기를 종료합니다.\")\n",
+        "        break"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "KucF-jnk53G9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
